@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collins Osas - My Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <h2 class="logo">Collins Osas</h2>
+      <button id="menu-btn">☰</button>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home section -->
+    <section id="home">
+      <img src="images/me-1.jpg" alt="My picture" class="profile-pic" />
+      <h1>Hi, I'm Ojiezele Collins Osas</h1>
+      <p>Frontend Developer | React &amp; React Native</p>
+      <p id="greeting"></p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-box">
+        <img src="images/me-2.png" alt="Me at work" />
+        <div>
+          <p>
+            I'm a web developer at 7Forge LTD, where I build modern, responsive
+            websites and web applications using React and Next.js.
+          </p>
+          <p>
+            I have built and deployed projects on Vercel, including a platform
+            for peer-to-peer football predictions and gaming tournaments. I also
+            design websites for local businesses in Lagos.
+          </p>
+          <p>
+            I enjoy solving problems, I pay attention to design and mobile
+            responsiveness, and I am always learning new things.
+          </p>
+          <p><b>Location:</b> Nigeria</p>
+          <p><b>Languages:</b> English (Fluent)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience and Education section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Frontend Developer (React &amp; React Native)</h3>
+        <p class="small">7Forge LTD, Nigeria | Aug 2024 - Present</p>
+        <ul>
+          <li>Build and maintain responsive websites with React and Next.js</li>
+          <li>Turn designs into working web pages</li>
+          <li>Connect the front-end to APIs</li>
+          <li>Test, fix bugs and deploy updates</li>
+        </ul>
+      </div>
+
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Diploma in Web Development in Python</h3>
+        <p class="small">Aptech Computer Education | 2023 - 2024</p>
+      </div>
+      <div class="card">
+        <h3>BSc in Computer Science</h3>
+        <p class="small">Ambrose Alli University | 2019 - 2023</p>
+      </div>
+
+      <h2>Certification</h2>
+      <div class="card">
+        <h3>Aptech Computer Education</h3>
+        <p class="small">January 2024</p>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="card">
+        <h3>Empowered2Play</h3>
+        <p>
+          A website where gamers and football fans compete against each other.
+          Users can make football predictions and join online tournaments for
+          games like Call of Duty: Mobile and eFootball to win prizes.
+        </p>
+        <a href="https://empowered2play.com" target="_blank" class="btn"
+          >Visit Website</a
+        >
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Tailwind CSS</span>
+        <span>Responsive Design</span>
+        <span>REST APIs</span>
+        <span>Git &amp; GitHub</span>
+        <span>Vercel</span>
+        <span>UI/UX Design</span>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section id="gallery">
+      <h2>Me and My Friends</h2>
+      <p class="small">Click on a picture to see it bigger</p>
+      <div class="gallery">
+        <img src="images/gallery-1.jpg" alt="Me and a friend" />
+        <img src="images/gallery-2.jpg" alt="Me about to go out" />
+        <img src="images/gallery-3.jpg" alt="Hanging out with friends" />
+        <img src="images/gallery-4.png" alt="Hanging out with a friend" />
+        <img src="images/gallery-5.jpg" alt="Me outside" />
+      </div>
+    </section>
+
+    <!-- Popup for big picture -->
+    <div id="popup">
+      <span id="close-btn">&times;</span>
+      <img id="popup-img" src="" alt="" />
+    </div>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:user.collins.add@gmail.com"
+          >user.collins.add@gmail.com</a
+        >
+      </p>
+      <p>Phone: 07044813596</p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/osas-collins-7057a8264"
+          target="_blank"
+          >Osas Collins</a
+        >
+      </p>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Ojiezele Collins Osas</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #0a2520;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  color: #1c907c;
+}
+
+.small {
+  color: #777;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1c907c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #cf8a3c;
+}
+
+/* Navigation */
+nav {
+  background-color: #0a2520;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #cf8a3c;
+}
+
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Home */
+#home {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1c907c;
+  margin-bottom: 20px;
+}
+
+#greeting {
+  color: #1c907c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* About */
+.about-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-box p {
+  margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #1c907c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills-list span {
+  background-color: #0a2520;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* Gallery */
+#gallery .small {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#popup img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#form-message {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #0a2520;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-box img {
+    width: 100%;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
